@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Overview | Machine Learning</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>AI Overview</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ml.html" class="current">Machine Learning</a>
+      <a href="llm.html">Large Language Models</a>
+      <a href="uses.html">Uses and Ethics</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Machine learning</h2>
+    <p>A machine learning program is trained on data instead of being told the answers. The kind of data it gets,
+      and whether the correct answers come with it, decides which of the three groups below a problem belongs
+      to.</p>
+
+    <div class="columns">
+      <section>
+        <h2>Supervised</h2>
+        <p>The data is labelled. Every example already has the right answer attached, and the model learns to give
+          that answer back.</p>
+        <ul>
+          <li>Spam or not spam</li>
+          <li>Predicting a house price</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Unsupervised</h2>
+        <p>No answers are given. The model looks for structure by itself, such as groups of similar items or items
+          that do not fit.</p>
+        <ul>
+          <li>Grouping customers</li>
+          <li>Finding strange bank charges</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Reinforcement</h2>
+        <p>A program acts in an environment and learns from rewards. Good moves earn points and bad moves lose
+          them.</p>
+        <ul>
+          <li>Game playing programs</li>
+          <li>Robots that walk or grip</li>
+        </ul>
+      </section>
+    </div>
+
+    <figure>
+      <img src="img/labeled-vs-unlabeled.png" alt="Labelled data on the left and unlabelled data on the right">
+      <figcaption>The left side is labelled data, so a supervised model can learn the answer. The right side is
+        unlabelled data, so the model has to make up the groups itself.</figcaption>
+    </figure>
+
+    <h2>How training works</h2>
+    <p>The data is split into a training set and a test set. The model makes predictions on the training set, a
+      loss function measures how wrong they are, and then the model adjusts its numbers to make the error
+      smaller. This repeats thousands of times.</p>
+
+    <p>If a model does well on the training data but badly on the test data, it has overfitted. It memorized the
+      examples instead of learning the pattern.</p>
+
+    <h2>Sources</h2>
+    <ul class="sources">
+      <li><a href="https://developers.google.com/machine-learning/crash-course" target="_blank">Google: Machine
+          Learning Crash Course</a></li>
+      <li><a href="https://www.ibm.com/think/topics/supervised-vs-unsupervised-learning" target="_blank">IBM:
+          Supervised vs. unsupervised learning</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ariya Briscoe. All rights reserved.</p>
+    <p>This site is for academic purposes only.</p>
+    <p>CST 336 Internet Programming.</p>
+    <img src="img/csumb-logo.png" alt="CSUMB Logo">
+  </footer>
+</body>
+
+</html>

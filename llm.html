@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Overview | Large Language Models</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>AI Overview</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ml.html">Machine Learning</a>
+      <a href="llm.html" class="current">Large Language Models</a>
+      <a href="uses.html">Uses and Ethics</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>What a large language model is</h2>
+    <p>A large language model is a very big neural network whose main job is to guess what text comes next. It is
+      trained on a huge amount of writing, and from that it learns how words usually follow each other.</p>
+
+    <figure>
+      <img src="img/transformer-architecture.png" alt="Diagram of the transformer design with encoder and decoder">
+      <figcaption>The transformer design, with the encoder on the left and the decoder on the right</figcaption>
+    </figure>
+
+    <details>
+      <summary>Do all language models use both parts of this diagram?</summary>
+      <p>No. The diagram shows the original encoder-decoder transformer. Some language models use only the
+        decoder portion to predict the next token.</p>
+    </details>
+
+    <h2>Text becomes tokens</h2>
+    <p>The model cannot read letters. Text is first cut into tokens, which are usually a word or a piece of a word,
+      and every token is turned into a number. A normal sentence might become eight to twelve tokens. This is why
+      these models are measured in tokens instead of words.</p>
+
+    <h2>Transformers and attention</h2>
+    <p>The design behind modern language models is called a transformer. Its main idea is attention. While it
+      works on one token, the model checks how important every other token in the passage is to that one. That is
+      how it keeps track of what a sentence is really about.</p>
+
+    <h2>Training and fine tuning</h2>
+    <p>Pre-training happens once and costs the most. The model reads an enormous amount of text and keeps
+      practicing the next word guess. Nothing has to be labelled, because the text itself gives the answer.</p>
+
+    <p>Fine tuning happens afterwards and is much smaller. The trained model gets a little more training on a
+      narrow set of examples so it follows instructions or works on one subject.</p>
+
+    <h2>Sources</h2>
+    <ul class="sources">
+      <li><a href="https://arxiv.org/abs/1706.03762" target="_blank">Vaswani and others: Attention Is All You
+          Need</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Large_language_model" target="_blank">Wikipedia: Large language
+          model</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ariya Briscoe. All rights reserved.</p>
+    <p>This site is for academic purposes only.</p>
+    <p>CST 336 Internet Programming.</p>
+    <img src="img/csumb-logo.png" alt="CSUMB Logo">
+  </footer>
+</body>
+
+</html>
